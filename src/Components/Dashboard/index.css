@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@media(max-width:576px){
+    .responsive-white-container{
+    width:100vw;
+    height:100vh;
+    overflow:auto;
+    border-radius:0px;
+    }
+
+}

@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+.button-regenerate{
+    background-color:#089108;
+    color:white;
+    width:50%;
+    padding:10px;
+    font-size:18px;
+    border-radius:8px;
+    border-width:0px;
+    outline:none;
+
+}
+.button-regenerate:hover{
+    background-color:#27d827;
+    border-width:0px;
+}
+.regenerate-container{
+    text-align:center;
+}
+.close-icon{
+    font-size:30px;
+    margin-left:auto;
+    cursor:pointer;
+}
+
+@media (max-width:576px){
+    .responsive-card-container{
+        width:100vw;
+        min-height:100vh;
+        border-radius:0px;
+    }
+}
