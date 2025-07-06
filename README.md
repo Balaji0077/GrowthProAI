@@ -1,12 +1,40 @@
-# React + Vite
+# Mini Local Business Dashboard
+This is a full-stack project that simulates how small businesses can view their Google ratings and SEO headlines. It has a React frontend and a Node.js + Express backend.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Features
+- Input form to enter Business Name and Location
 
-Currently, two official plugins are available:
+- Displays:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Google Rating (simulated)
 
-## Expanding the ESLint configuration
+Number of Reviews (simulated)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+AI-generated SEO headline (random from backend)
+
+Button to regenerate SEO headline
+
+Mobile-friendly and responsive using Tailwind CSS
+
+# Tech Stack
+
+Frontend: React + Tailwind CSS
+
+Backend: Node.js + Express
+
+# How to Run the Project 
+1. Run the Backend
+   npm install
+   node server.js
+2. Run the Frontend
+   npm install
+   npm run dev
+
+- http://localhost:3000
+   
+# Endpoints 
+
+POST /business-data: Accepts business name and location, returns rating, reviews, and headline.
+
+GET /regenerate-headline?name=...&location=...: Returns a new headline using the same business info.
+
