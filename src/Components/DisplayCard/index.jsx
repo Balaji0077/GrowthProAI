@@ -10,7 +10,7 @@ const DisplayCard = (props)=>{
     const [baseHeadline,setHeadline] = useState(headline)
     const changeHeadline = async()=>{
         setLoading(true);
-        const response = await fetch(`https://growthproai-backend-a6fu.onrender.com/regenerate-headline?name=${name}&location=${location}`);
+        const response = await fetch(`http://localhost:3000/regenerate-headline?name=${name}&location=${location}`);
         const data = await response.json();
         if(response.ok){
             setTimeout(()=>{

@@ -53,7 +53,7 @@ const DashBoard = ()=>{
             },
             body:JSON.stringify(input)
          }
-         const  response = await fetch("https://growthproai-backend-a6fu.onrender.com/business-data",options);
+         const  response = await fetch("http://localhost:3000/business-data",options);
          const data = await response.json();
          
          if(response.ok){
